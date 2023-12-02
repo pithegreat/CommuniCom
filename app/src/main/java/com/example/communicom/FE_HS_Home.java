@@ -13,7 +13,7 @@ import android.widget.Toast;
 
 public class FE_HS_Home extends AppCompatActivity {
 
-    Spinner pageSelSpinner;
+    Spinner pageSelectionSpinner;
     String pageSelectionString, confirmDataString;
     TextView currentPage_Header;
 
@@ -31,7 +31,7 @@ public class FE_HS_Home extends AppCompatActivity {
         Bundle confirmBundle = confirmIntent.getExtras();
 
         confirmDataString = confirmBundle.getString("selectionString");
-        pageSelSpinner = findViewById(R.id.pageSelSpinner);
+        pageSelectionSpinner = findViewById(R.id.pageSelSpinner);
 
         //location selection spinner
         //location selection adapter
@@ -40,10 +40,12 @@ public class FE_HS_Home extends AppCompatActivity {
                 ArrayAdapter.createFromResource(this,
                         R.array.pageSelArray, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        pageSelSpinner.setAdapter(adapter);
+        pageSelectionSpinner.setAdapter(adapter);
+        currentPage_Header = findViewById(R.id.currentPage_Header);
+        currentPage_Header.setText(pageSelectionSpinner.getSelectedItem().toString());
 
         //output with  string = locationSelection.getSelectedItem().toString();
-        currentPage_Header.setText(pageSelSpinner.getSelectedItem().toString());
+
 
 
     }
