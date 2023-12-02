@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CommuniCom"
+        tools:targetApi="31">
+        <activity
+            android:name=".FE_Form_SubmitNews"
+            android:exported="false" />
+        <activity
+            android:name=".FE_Form_ContactUs"
+            android:exported="false" />
+        <activity
+            android:name=".FE_Form_CreatePost"
+            android:exported="false" />
+        <activity
+            android:name=".FE_HS_Maps"
+            android:exported="false" />
+        <activity
+            android:name=".FE_HS_Resources"
+            android:exported="false" />
+        <activity
+            android:name=".FE_HS_Forums"
+            android:exported="false" />
+        <activity
+            android:name=".FE_HS_News"
+            android:exported="false" />
+        <activity
+            android:name=".FE_HS_Home"
+            android:exported="false" />
+        <activity
+            android:name=".FE_Initial_StartUp"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
