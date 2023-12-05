@@ -7,7 +7,7 @@
     tools:context=".FE_HS_News">
 
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_News"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -19,30 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.315" />
-
-    <Button
-        android:id="@+id/mapsBtn"
-        android:layout_width="84dp"
-        android:layout_height="wrap_content"
-        android:text="Maps"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.963"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <Button
-        android:id="@+id/forumsBtn"
-        android:layout_width="97dp"
-        android:layout_height="wrap_content"
-        android:text="Forums"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
 
     <TextView
         android:id="@+id/textView3"
@@ -57,18 +33,6 @@
         app:layout_constraintVertical_bias="0.217" />
 
     <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:text="PAGE TITLE 2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.03"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.729" />
-
-    <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -80,32 +44,8 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15" />
 
-    <Button
-        android:id="@+id/newsBtn"
-        android:layout_width="87dp"
-        android:layout_height="wrap_content"
-        android:text="News"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <Button
-        android:id="@+id/resourcesBtn"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="Resources"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_News2"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -119,7 +59,7 @@
         app:layout_constraintVertical_bias="0.612" />
 
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_News3"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -137,6 +77,7 @@
         android:layout_width="84dp"
         android:layout_height="wrap_content"
         android:text="Maps"
+        android:onClick="onMapsClickN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.963"
@@ -149,6 +90,7 @@
         android:layout_width="97dp"
         android:layout_height="wrap_content"
         android:text="Forums"
+        android:onClick="onForumsClickN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.312"
@@ -161,6 +103,7 @@
         android:layout_width="87dp"
         android:layout_height="wrap_content"
         android:text="News"
+        android:onClick="onNewsClickN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
@@ -173,6 +116,7 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Resources"
+        android:onClick="onResourcesClickN"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.67"

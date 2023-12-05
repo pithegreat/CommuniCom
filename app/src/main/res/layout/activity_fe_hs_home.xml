@@ -23,6 +23,7 @@
         android:layout_width="97dp"
         android:layout_height="wrap_content"
         android:text="Forums"
+        android:onClick="onForumsClickH"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.312"
@@ -35,6 +36,7 @@
         android:layout_width="84dp"
         android:layout_height="wrap_content"
         android:text="Maps"
+        android:onClick="onMapsClickH"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.963"
@@ -47,6 +49,7 @@
         android:layout_width="87dp"
         android:layout_height="wrap_content"
         android:text="News"
+        android:onClick="onNewsClickH"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
@@ -59,6 +62,7 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Resources"
+        android:onClick="onResourcesClickH"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.67"
@@ -91,7 +95,7 @@
         app:layout_constraintVertical_bias="0.15" />
 
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_News"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -105,7 +109,7 @@
         app:layout_constraintVertical_bias="0.595" />
 
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_News"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"

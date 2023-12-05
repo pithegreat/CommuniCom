@@ -23,6 +23,7 @@
         android:layout_width="84dp"
         android:layout_height="wrap_content"
         android:text="Maps"
+        android:onClick="onMapsClickM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.963"
@@ -35,24 +36,13 @@
         android:layout_width="97dp"
         android:layout_height="wrap_content"
         android:text="Forums"
+        android:onClick="onForumsClickM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.312"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.061" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="17dp"
-        android:text="PAGE TITLE 1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.217" />
 
     <TextView
         android:id="@+id/textView3"
@@ -83,6 +73,7 @@
         android:layout_width="87dp"
         android:layout_height="wrap_content"
         android:text="News"
+        android:onClick="onNewsClickM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.033"
@@ -95,6 +86,7 @@
         android:layout_width="120dp"
         android:layout_height="wrap_content"
         android:text="Resources"
+        android:onClick="onResourcesClickM"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.67"
@@ -103,7 +95,7 @@
         app:layout_constraintVertical_bias="0.061" />
 
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_Maps"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -117,7 +109,7 @@
         app:layout_constraintVertical_bias="0.595" />
 
     <TextView
-        android:id="@+id/pageContent_Home"
+        android:id="@+id/pageContent_Maps2"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -130,51 +122,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.971" />
 
-    <Button
-        android:id="@+id/mapsBtn"
-        android:layout_width="84dp"
-        android:layout_height="wrap_content"
-        android:text="Maps"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.963"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <Button
-        android:id="@+id/forumsBtn"
-        android:layout_width="97dp"
-        android:layout_height="wrap_content"
-        android:text="Forums"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.312"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <Button
-        android:id="@+id/newsBtn"
-        android:layout_width="87dp"
-        android:layout_height="wrap_content"
-        android:text="News"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.033"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
-
-    <Button
-        android:id="@+id/resourcesBtn"
-        android:layout_width="120dp"
-        android:layout_height="wrap_content"
-        android:text="Resources"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.061" />
 </androidx.constraintlayout.widget.ConstraintLayout>
