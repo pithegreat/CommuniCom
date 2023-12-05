@@ -1,2 +1,2 @@
 # CommuniCom
-COSC 341 project
+## COSC 341 project
