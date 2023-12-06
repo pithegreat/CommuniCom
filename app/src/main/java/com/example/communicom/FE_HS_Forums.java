@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
+import android.widget.TextView;
 
 public class FE_HS_Forums extends AppCompatActivity {
 //strings for transfer of data
@@ -29,11 +30,13 @@ public class FE_HS_Forums extends AppCompatActivity {
         filterSelectionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         filterSelection.setAdapter(filterSelectionAdapter);
         //output with  string = locationSelection.getSelectedItem().toString();
-        filterString = filterSelection.getSelectedItem().toString();
+
     }
 
     public void onConfirmFilterClicked(View view){
-
+        TextView currentFilter = findViewById(R.id.currentFilter);
+        filterString = filterSelection.getSelectedItem().toString();
+        currentFilter.setText("Currently Filtered By: "+filterString);
     }
     public void onNewsClickF(View view){
         Intent intentN = new Intent(this, FE_HS_News.class);
