@@ -5,15 +5,35 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Spinner;
 
 public class FE_HS_Forums extends AppCompatActivity {
-
+//strings for transfer of data
     String versionM_F, versionN_F, versionF_F, versionR_F;
+//strings for internal use
+    String filterString;
+    ArrayAdapter<CharSequence> filterSelectionAdapter;
+    Spinner filterSelection;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fe_hs_forums);
+
+        filterSelection = findViewById(R.id.filterBySpinner);
+        filterSelectionAdapter = ArrayAdapter.createFromResource(this,
+                R.array.filterByArray, android.R.layout.simple_spinner_item);
+        //location selection adapter
+        filterSelectionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        filterSelection.setAdapter(filterSelectionAdapter);
+        //output with  string = locationSelection.getSelectedItem().toString();
+        filterString = filterSelection.getSelectedItem().toString();
+    }
+
+    public void onConfirmFilterClicked(View view){
+
     }
     public void onNewsClickF(View view){
         Intent intentN = new Intent(this, FE_HS_News.class);

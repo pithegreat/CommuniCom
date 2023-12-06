@@ -42,6 +42,8 @@ public class FE_Initial_StartUp extends AppCompatActivity {
         confirmIntent.putExtras(confirmBundle);
         startActivity(confirmIntent);
 
+        finish();
+
     }
 
 }
