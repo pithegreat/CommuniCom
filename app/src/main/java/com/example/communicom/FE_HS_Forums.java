@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class FE_HS_Forums extends AppCompatActivity {
 //strings for transfer of data
@@ -16,12 +17,22 @@ public class FE_HS_Forums extends AppCompatActivity {
     String filterString;
     ArrayAdapter<CharSequence> filterSelectionAdapter;
     Spinner filterSelection;
+    //settings for toast
+    CharSequence text;
+    int duration;
+    Toast toast;
+    //subscriber alert switch
+    int sub = 0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fe_hs_forums);
+
+        text = "Sending message...";
+        duration = Toast.LENGTH_SHORT;
+        toast = Toast.makeText(this /* MyActivity */, text, duration);
 
         filterSelection = findViewById(R.id.filterBySpinner);
         filterSelectionAdapter = ArrayAdapter.createFromResource(this,
@@ -69,5 +80,31 @@ public class FE_HS_Forums extends AppCompatActivity {
         startActivity(intentM);
 
         finish();
+    }
+    public void onCPostBtnPressed(View view)
+    {
+
+    }
+    public void onAlertsBtnPressed(View view)
+    {
+        if (sub == 0){
+            sub = 1;
+            toast.setText("SUBSCRIPTION CONFIRMED!");
+            toast.show();
+        }
+        else if (sub == 1){
+            sub = 0;
+            toast.setText("SUBSCRIPTION REVOKED!");
+            toast.show();
+        }
+    }
+
+    public void onShareBtnPressed(View view)
+    {
+
+    }
+    public void onReportBtnPressed(View view)
+    {
+
     }
 }
