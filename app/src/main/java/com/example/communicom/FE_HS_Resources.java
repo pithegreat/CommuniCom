@@ -46,4 +46,8 @@ public class FE_HS_Resources extends AppCompatActivity {
 
         finish();
     }
+    public void onReturnHomePressedR_FE(View view){
+        Intent resourcesHome = new Intent(this, FE_HS_Home.class);
+        startActivity(resourcesHome);
+    }
 }

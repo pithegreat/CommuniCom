@@ -106,4 +106,8 @@ public class FE_HS_Forums extends AppCompatActivity {
     {
 
     }
+    public void onReturnHomePressedF_FE(View view){
+        Intent forumHome = new Intent(this, FE_HS_Home.class);
+        startActivity(forumHome);
+    }
 }

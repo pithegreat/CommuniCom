@@ -8,13 +8,13 @@
 
     <Button
         android:id="@+id/reportBtn"
-        android:layout_width="90dp"
+        android:layout_width="88dp"
         android:layout_height="wrap_content"
-        android:text="report"
         android:onClick="onReportBtnPressed"
+        android:text="report"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.962"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.231" />
@@ -23,11 +23,11 @@
         android:id="@+id/shareBtn"
         android:layout_width="99dp"
         android:layout_height="wrap_content"
-        android:text="share"
         android:onClick="onShareBtnPressed"
+        android:text="share"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintHorizontal_bias="0.714"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.231" />
@@ -125,26 +125,26 @@
 
     <Button
         android:id="@+id/createPostBtn"
-        android:layout_width="wrap_content"
+        android:layout_width="125dp"
         android:layout_height="wrap_content"
-        android:text="cPostBtn"
         android:onClick="onCPostBtnPressed"
+        android:text="Create Post"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.01"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.232" />
+        app:layout_constraintVertical_bias="0.231" />
 
     <Button
         android:id="@+id/alertsBtn"
         android:layout_width="95dp"
         android:layout_height="wrap_content"
-        android:text="alerts"
         android:onClick="onAlertsBtnPressed"
+        android:text="alerts"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.367"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.231" />
@@ -184,4 +184,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.435" />
+
+    <Button
+        android:id="@+id/returnHomeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:onClick="onReturnHomePressedF_FE"
+        android:text="Return Home"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.131" />
 </androidx.constraintlayout.widget.ConstraintLayout>

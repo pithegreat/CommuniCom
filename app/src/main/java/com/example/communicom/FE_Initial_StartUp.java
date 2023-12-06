@@ -16,6 +16,7 @@ public class FE_Initial_StartUp extends AppCompatActivity {
     Button confirmButton;
     String selectionString;
     String keyword = "Please?";
+    String noChoiceKey = "Area Selection";
 
     CharSequence text;
     int duration;
@@ -48,12 +49,17 @@ public class FE_Initial_StartUp extends AppCompatActivity {
     }
     public void onConfirmPressed(View view){
         selectionString = locationSelection.getSelectedItem().toString();
-        Intent confirmIntent = new Intent(this, FE_HS_Home.class);
-        Bundle confirmBundle = new Bundle();
-        confirmBundle.getString("selectionString", selectionString);
-        confirmIntent.putExtras(confirmBundle);
-        startActivity(confirmIntent);
-
+        if(selectionString.equals(noChoiceKey)){
+            toast.setText("No selection made!");
+            toast.show();
+        } else {
+            selectionString = locationSelection.getSelectedItem().toString();
+            Intent confirmIntent = new Intent(this, FE_HS_Home.class);
+            Bundle confirmBundle = new Bundle();
+            confirmBundle.getString("selectionString", selectionString);
+            confirmIntent.putExtras(confirmBundle);
+            startActivity(confirmIntent);
+        }
     }
     public void onAdminModePressed(View view){
         selectionString = locationSelection.getSelectedItem().toString();
@@ -71,4 +77,9 @@ public class FE_Initial_StartUp extends AppCompatActivity {
         }
     }
 
+    public void onContactUsPressed(View view)
+    {
+        Intent contactUsIntent = new Intent(this, FE_Form_ContactUs.class);
+        startActivity(contactUsIntent);
+    }
 }

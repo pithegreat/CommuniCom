@@ -47,4 +47,8 @@ public class FE_HS_News extends AppCompatActivity {
 
         finish();
     }
+    public void onReturnHomePressedN_FE(View view){
+        Intent mapsHome = new Intent(this, FE_HS_Home.class);
+        startActivity(mapsHome);
+    }
 }
