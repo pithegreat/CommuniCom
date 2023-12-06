@@ -11,7 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class FE_HS_Forums extends AppCompatActivity {
-//strings for transfer of data
+//strings for transfer of data via intent
     String versionM_F, versionN_F, versionF_F, versionR_F;
 //strings for internal use
     String filterString;
