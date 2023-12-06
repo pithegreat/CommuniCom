@@ -11,11 +11,13 @@ public class FE_HS_Maps extends AppCompatActivity {
     String versionN_M, versionF_M, versionR_M, versionM_M;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fe_hs_maps);
     }
-    public void onNewsClickM(View view){
+    public void onNewsClickM(View view)
+    {
         Intent intentN = new Intent(this, FE_HS_News.class);
         intentN.putExtra("version", versionN_M);
         startActivity(intentN);

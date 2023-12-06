@@ -13,6 +13,21 @@
         android:theme="@style/Theme.CommuniCom"
         tools:targetApi="31">
         <activity
+            android:name=".BE_HS_Forums"
+            android:exported="false" />
+        <activity
+            android:name=".BE_HS_Resources"
+            android:exported="false" />
+        <activity
+            android:name=".BE_HS_Maps"
+            android:exported="false" />
+        <activity
+            android:name=".BE_HS_News"
+            android:exported="false" />
+        <activity
+            android:name=".BE_HS_Home"
+            android:exported="false" />
+        <activity
             android:name=".FE_Form_SubmitNews"
             android:exported="false" />
         <activity

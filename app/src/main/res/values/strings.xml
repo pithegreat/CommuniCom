@@ -9,9 +9,10 @@
         <item>Peachland</item>
         <item>Osoyoos</item>
         <item>Salmon Arm</item>
+        <item>Please?</item>
     </string-array>
 
-    <string-array name= "filterByArray">
+    <string-array name="filterByArray">
         <item>Filter By</item>
         <item>Distance</item>
         <item>Time</item>

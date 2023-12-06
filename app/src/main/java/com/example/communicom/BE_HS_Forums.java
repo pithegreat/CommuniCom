@@ -10,10 +10,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class FE_HS_Forums extends AppCompatActivity {
-//strings for transfer of data via intent
-    String versionM_F, versionN_F, versionF_F, versionR_F;
-//strings for internal use
+public class BE_HS_Forums extends AppCompatActivity {
+
+    String versionM_F_BE, versionN_F_BE, versionF_F_BE, versionR_F_BE;
+    //strings for internal use
     String filterString;
     ArrayAdapter<CharSequence> filterSelectionAdapter;
     Spinner filterSelection;
@@ -27,7 +27,7 @@ public class FE_HS_Forums extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fe_hs_forums);
+        setContentView(R.layout.activity_be_hs_forums);
 
         text = "Sending message...";
         duration = Toast.LENGTH_SHORT;
@@ -40,51 +40,49 @@ public class FE_HS_Forums extends AppCompatActivity {
         filterSelectionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         filterSelection.setAdapter(filterSelectionAdapter);
         //output with  string = locationSelection.getSelectedItem().toString();
-
     }
-
-    public void onConfirmFilterClicked(View view){
+    public void onConfirmFilterClicked_BE(View view){
         TextView currentFilter = findViewById(R.id.currentFilter);
         filterString = filterSelection.getSelectedItem().toString();
         currentFilter.setText("Currently Filtered By: "+filterString);
     }
-    public void onNewsClickF(View view){
-        Intent intentN = new Intent(this, FE_HS_News.class);
-        intentN.putExtra("version", versionN_F);
+    public void onNewsClickF_BE(View view){
+        Intent intentN = new Intent(this, BE_HS_News.class);
+        intentN.putExtra("version", versionN_F_BE);
         startActivity(intentN);
 
         finish();
     }
-    public void onForumsClickF(View view)
+    public void onForumsClickF_BE(View view)
     {
-        Intent intentF = new Intent(this, FE_HS_Forums.class);
-        intentF.putExtra("version", versionF_F);
+        Intent intentF = new Intent(this, BE_HS_Forums.class);
+        intentF.putExtra("version", versionF_F_BE);
         startActivity(intentF);
 
         finish();
     }
-    public void onResourcesClickF(View view)
+    public void onResourcesClickF_BE(View view)
     {
-        Intent intentR = new Intent(this, FE_HS_Resources.class);
-        intentR.putExtra("version", versionR_F);
+        Intent intentR = new Intent(this, BE_HS_Resources.class);
+        intentR.putExtra("version", versionR_F_BE);
         startActivity(intentR);
 
         finish();
 
     }
-    public void onMapsClickF(View view)
+    public void onMapsClickF_BE(View view)
     {
-        Intent intentM = new Intent(this, FE_HS_Maps.class);
-        intentM.putExtra("version", versionM_F);
+        Intent intentM = new Intent(this, BE_HS_Maps.class);
+        intentM.putExtra("version", versionM_F_BE);
         startActivity(intentM);
 
         finish();
     }
-    public void onCPostBtnPressed(View view)
+    public void onCPostBtnPressed_BE(View view)
     {
 
     }
-    public void onAlertsBtnPressed(View view)
+    public void onAlertsBtnPressed_BE(View view)
     {
         if (sub == 0){
             sub = 1;
@@ -98,11 +96,11 @@ public class FE_HS_Forums extends AppCompatActivity {
         }
     }
 
-    public void onShareBtnPressed(View view)
+    public void onShareBtnPressed_BE(View view)
     {
 
     }
-    public void onReportBtnPressed(View view)
+    public void onReportBtnPressed_BE(View view)
     {
 
     }
