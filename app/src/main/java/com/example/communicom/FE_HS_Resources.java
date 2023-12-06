@@ -14,6 +14,10 @@ public class FE_HS_Resources extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fe_hs_resources);
     }
+    public void onContactUsPressedF_FE(View view){
+        Intent intentN = new Intent(this, FE_Form_ContactUs.class);
+        startActivity(intentN);
+    }
     public void onNewsClickR(View view){
         Intent intentN = new Intent(this, FE_HS_News.class);
         intentN.putExtra("version", versionN_R);
@@ -49,5 +53,7 @@ public class FE_HS_Resources extends AppCompatActivity {
     public void onReturnHomePressedR_FE(View view){
         Intent resourcesHome = new Intent(this, FE_HS_Home.class);
         startActivity(resourcesHome);
+
+        finish();
     }
 }

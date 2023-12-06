@@ -95,14 +95,15 @@ public class BE_HS_Forums extends AppCompatActivity {
             toast.show();
         }
     }
-
     public void onShareBtnPressed_BE(View view)
     {
-
+        toast.setText("BACK_END RESPONSE_SHARE");
+        toast.show();
     }
     public void onReportBtnPressed_BE(View view)
     {
-
+        toast.setText("BACK_END RESPONSE_REPORT");
+        toast.show();
     }
 
 }

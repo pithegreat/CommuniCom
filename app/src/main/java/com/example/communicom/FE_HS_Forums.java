@@ -80,11 +80,12 @@ public class FE_HS_Forums extends AppCompatActivity {
 
         finish();
     }
-    public void onCPostBtnPressed(View view)
+    public void onCPostBtnPressed_FE(View view)
     {
-
+        Intent createPost = new Intent(this, FE_Form_CreatePost.class);
+        startActivity(createPost);
     }
-    public void onAlertsBtnPressed(View view)
+    public void onAlertsBtnPressed_FE(View view)
     {
         if (sub == 0){
             sub = 1;
@@ -97,17 +98,20 @@ public class FE_HS_Forums extends AppCompatActivity {
             toast.show();
         }
     }
-
-    public void onShareBtnPressed(View view)
+    public void onShareBtnPressed_FE(View view)
     {
-
+        toast.setText("SHARED WITH FRIENDS!");
+        toast.show();
     }
-    public void onReportBtnPressed(View view)
+    public void onReportBtnPressed_FE(View view)
     {
-
+        toast.setText("REPORT SUBMIT!");
+        toast.show();
     }
     public void onReturnHomePressedF_FE(View view){
         Intent forumHome = new Intent(this, FE_HS_Home.class);
         startActivity(forumHome);
+
+        finish();
     }
 }

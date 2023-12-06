@@ -52,5 +52,7 @@ public class FE_HS_Maps extends AppCompatActivity {
     public void onReturnHomePressedM_FE(View view){
         Intent mapsHome = new Intent(this, FE_HS_Home.class);
         startActivity(mapsHome);
+
+        finish();
     }
 }
