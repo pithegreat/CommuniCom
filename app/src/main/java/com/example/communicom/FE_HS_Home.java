@@ -58,4 +58,8 @@ public class FE_HS_Home extends AppCompatActivity
 
         finish();
     }
+    public void onSubmitNewsClickH(View view){
+        Intent intentSubmit = new Intent (this, FE_Form_SubmitNews.class);
+        startActivity(intentSubmit);
+    }
 }
