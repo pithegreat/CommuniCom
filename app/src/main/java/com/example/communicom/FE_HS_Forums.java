@@ -10,12 +10,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.io.BufferedReader;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.IOException;
-import java.io.InputStreamReader;
-
 public class FE_HS_Forums extends AppCompatActivity {
 //strings for transfer of data via intent
     String versionM_F, versionN_F, versionF_F, versionR_F;
@@ -29,16 +23,11 @@ public class FE_HS_Forums extends AppCompatActivity {
     Toast toast;
     //subscriber alert switch
     int sub = 0;
-    TextView display;
-    String line = "";
-    String txt = "";
-    String [] data;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_fe_hs_forums);
-        display = findViewById(R.id.displayPosts);
 
         text = "Sending message...";
         duration = Toast.LENGTH_SHORT;
@@ -51,25 +40,6 @@ public class FE_HS_Forums extends AppCompatActivity {
         filterSelectionAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         filterSelection.setAdapter(filterSelectionAdapter);
         //output with  string = locationSelection.getSelectedItem().toString();
-
-        try(FileInputStream fis = openFileInput("info.txt")){
-            InputStreamReader input = new InputStreamReader(fis);
-            BufferedReader br = new BufferedReader(input);
-            while((line = br.readLine())!=null)
-                txt+= line+"\n";
-
-        } catch (FileNotFoundException e) {
-            //System.out.println("Nooooooooo");
-            throw new RuntimeException(e);
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-
-        data = txt.split("\n");
-
-        display.setText(data[0]);
-
-
 
     }
 
@@ -143,14 +113,5 @@ public class FE_HS_Forums extends AppCompatActivity {
         startActivity(forumHome);
 
         finish();
-    }
-
-    public void onNextClicked(View view)
-    {
-
-    }
-    public void onPrevClicked(View view)
-    {
-
     }
 }

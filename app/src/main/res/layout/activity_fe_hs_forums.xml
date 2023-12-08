@@ -68,7 +68,7 @@
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.851" />
+        app:layout_constraintVertical_bias="0.729" />
 
     <TextView
         android:id="@+id/textView"
@@ -109,7 +109,7 @@
         app:layout_constraintVertical_bias="0.061" />
 
     <TextView
-        android:id="@+id/displayPosts"
+        android:id="@+id/pageContent_News"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
@@ -198,29 +198,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.131" />
-
-    <Button
-        android:id="@+id/prev"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onPrevClicked"
-        android:text="Previous"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/nxt"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755" />
-
-    <Button
-        android:id="@+id/nxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:onClick="onNextClicked"
-        android:text="Next"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.725"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755" />
 </androidx.constraintlayout.widget.ConstraintLayout>

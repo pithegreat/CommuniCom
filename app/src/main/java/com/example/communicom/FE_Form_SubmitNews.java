@@ -81,22 +81,54 @@ public class FE_Form_SubmitNews extends AppCompatActivity {
         RadioButton radioButton = findViewById(selectedID);
         time = radioButton.getText().toString();
     }
-    public void onSubmitNewsButtonPressed(View view){
-        if(susView.isChecked()){sus = "Suspicious Activity";}
-        if(missingView.isChecked()){missing = "Missing Items";}
-        if(comm_aView.isChecked()){comm_a = "Community Alert";}
-        if(hazardView.isChecked()){hazard = "Potential Hazards";}
-        if(weatherView.isChecked()){weather = "Weather Conditions";}
-        if(otherChkView.isChecked()){other = otherEntryView.getText().toString();}
+    public static void writeToFile(Context context, String fileName, String[] elements) {
+        try {
+            // Open the file in append mode, if the file doesn't exist, it will be created
+            FileOutputStream fileOutputStream = context.openFileOutput(fileName, Context.MODE_APPEND);
+            OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutputStream);
+
+            // Iterate through the elements and append them to the file
+            for (String element : elements) {
+                outputStreamWriter.write(element + ", ");//
+            }
+            outputStreamWriter.write("\n");
+            // Close the streams
+            outputStreamWriter.close();
+            fileOutputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    public void onSubmitNewsButtonPressed(View view) {
+        if (susView.isChecked()) {
+            sus = "Suspicious Activity";
+        }
+        if (missingView.isChecked()) {
+            missing = "Missing Items";
+        }
+        if (comm_aView.isChecked()) {
+            comm_a = "Community Alert";
+        }
+        if (hazardView.isChecked()) {
+            hazard = "Potential Hazards";
+        }
+        if (weatherView.isChecked()) {
+            weather = "Weather Conditions";
+        }
+        if (otherChkView.isChecked()) {
+            other = otherEntryView.getText().toString();
+        }
 
         comments = commentsView.getText().toString();
 
         location = locationSelectionView.getSelectedItem().toString();
         //all outputs working
-        String newsElementsTrial = ("sus: "+sus+" lo:  "+location+" ti: "+time);
+        String[] elements = {sus, missing, comm_a, hazard, weather, other, time, location, comments};
+        writeToFile(this, FILE_NAME, elements);
+        String newsElementsTrial = ("SUBMIT TO FILE!");
         toast.setText(newsElementsTrial);
         //String[] newsElements = {sus,missing,comm_a,hazard,weather,other};
         toast.show();
-        //writeToFile(this, FILE_NAME, newsElements);
+        finish();
     }
 }
