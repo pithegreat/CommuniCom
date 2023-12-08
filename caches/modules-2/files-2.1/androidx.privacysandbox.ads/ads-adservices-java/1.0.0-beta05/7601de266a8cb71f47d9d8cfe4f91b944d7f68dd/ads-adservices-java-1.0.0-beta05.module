@@ -1,0 +1,193 @@
+{
+  "formatVersion": "1.1",
+  "component": {
+    "group": "androidx.privacysandbox.ads",
+    "module": "ads-adservices-java",
+    "version": "1.0.0-beta05",
+    "attributes": {
+      "org.gradle.status": "release"
+    }
+  },
+  "createdBy": {
+    "gradle": {
+      "version": "8.0"
+    }
+  },
+  "variants": [
+    {
+      "name": "releaseVariantReleaseApiPublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-api"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.7.1"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.privacysandbox.ads",
+          "module": "ads-adservices",
+          "version": {
+            "requires": "1.0.0-beta05"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-adservices-java-1.0.0-beta05.aar",
+          "url": "ads-adservices-java-1.0.0-beta05.aar",
+          "size": 50090,
+          "sha512": "e7c9f3f7535789b14e3348cac355085d0a6b58c6cb7e6fa69d8bec4dfc697dc5baada8cc932bbf231d6c5b951238b18ac13da7e2a48a2202edfce75e1a297789",
+          "sha256": "97ea532b46bc83f5ace407e242a7accdd82b84a03775d96eaf5ce160cebdbb9c",
+          "sha1": "6b85f994ec3b5265e62a8697558974a0311ff1da",
+          "md5": "91c80670f68766fc2f6e1ca7dbd39671"
+        }
+      ]
+    },
+    {
+      "name": "releaseVariantReleaseRuntimePublication",
+      "attributes": {
+        "org.gradle.category": "library",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.libraryelements": "aar",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencies": [
+        {
+          "group": "androidx.annotation",
+          "module": "annotation",
+          "version": {
+            "requires": "1.2.0"
+          }
+        },
+        {
+          "group": "androidx.concurrent",
+          "module": "concurrent-futures",
+          "version": {
+            "requires": "1.1.0"
+          }
+        },
+        {
+          "group": "androidx.core",
+          "module": "core-ktx",
+          "version": {
+            "requires": "1.8.0"
+          }
+        },
+        {
+          "group": "androidx.privacysandbox.ads",
+          "module": "ads-adservices",
+          "version": {
+            "requires": "1.0.0-beta05"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "guava",
+          "version": {
+            "requires": "31.1-android"
+          }
+        },
+        {
+          "group": "com.google.guava",
+          "module": "listenablefuture",
+          "version": {
+            "requires": "1.0"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlin",
+          "module": "kotlin-stdlib",
+          "version": {
+            "requires": "1.8.21"
+          }
+        },
+        {
+          "group": "org.jetbrains.kotlinx",
+          "module": "kotlinx-coroutines-core",
+          "version": {
+            "requires": "1.7.1"
+          }
+        }
+      ],
+      "dependencyConstraints": [
+        {
+          "group": "androidx.privacysandbox.ads",
+          "module": "ads-adservices",
+          "version": {
+            "requires": "1.0.0-beta05"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-adservices-java-1.0.0-beta05.aar",
+          "url": "ads-adservices-java-1.0.0-beta05.aar",
+          "size": 50090,
+          "sha512": "e7c9f3f7535789b14e3348cac355085d0a6b58c6cb7e6fa69d8bec4dfc697dc5baada8cc932bbf231d6c5b951238b18ac13da7e2a48a2202edfce75e1a297789",
+          "sha256": "97ea532b46bc83f5ace407e242a7accdd82b84a03775d96eaf5ce160cebdbb9c",
+          "sha1": "6b85f994ec3b5265e62a8697558974a0311ff1da",
+          "md5": "91c80670f68766fc2f6e1ca7dbd39671"
+        }
+      ]
+    },
+    {
+      "name": "sourcesElements",
+      "attributes": {
+        "org.gradle.category": "documentation",
+        "org.gradle.dependency.bundling": "external",
+        "org.gradle.docstype": "sources",
+        "org.gradle.usage": "java-runtime"
+      },
+      "dependencyConstraints": [
+        {
+          "group": "androidx.privacysandbox.ads",
+          "module": "ads-adservices",
+          "version": {
+            "requires": "1.0.0-beta05"
+          }
+        }
+      ],
+      "files": [
+        {
+          "name": "ads-adservices-java-1.0.0-beta05-sources.jar",
+          "url": "ads-adservices-java-1.0.0-beta05-sources.jar",
+          "size": 13918,
+          "sha512": "41233c4c184d0a72b2590e9113fdd1ff79a2aa40c563fccb9592256ff8f1f3366b5a3b5e580bca2e326029d204f43ac38fceb231c55615d95b93f052cfac9793",
+          "sha256": "e666a8364e717dcd630bb6aff7132d04c98f4d66593a93b392bcb06bfcef6ad7",
+          "sha1": "cdc9d1fdbc1a4c7ce29c559bf41ed7f07732abdd",
+          "md5": "044aebd0adc0975dc381aa29be8ff4f7"
+        }
+      ]
+    }
+  ]
+}

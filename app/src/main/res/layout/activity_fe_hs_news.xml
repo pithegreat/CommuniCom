@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.131" />
 
     <TextView
-        android:id="@+id/pageContent_News"
+        android:id="@+id/displayPosts"
         android:layout_width="match_parent"
         android:layout_height="160dp"
         android:layout_marginStart="10dp"
